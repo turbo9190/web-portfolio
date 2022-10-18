@@ -1,0 +1,270 @@
+:root
+{
+    --green:#27ae60;
+}
+/*Main configuration */
+*
+{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;  border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html {
+    font-size: 62.5%;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+/*scroller */
+html ::-webkit-scrollbar{
+    width: 5rem;
+}
+html ::-webkit-scrollbar-track{
+
+    background-color: #fff;
+}
+html ::-webkit-scrollbar-thumb{
+    background: var(--green);
+}
+body{
+    background: #eee;
+    padding-right: 5rem;
+}
+/* header section starts */
+header
+{
+    position:fixed;
+    top:0; right:0;
+    min-height: 100vh;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    z-index: 1000;
+} 
+/* Nav bar */
+header .navbar
+{
+    writing-mode:vertical-lr;
+    padding:1.5rem;
+}
+header .navbar a
+{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:#222;
+}
+header .navbar a:hover
+{
+    color:var(--green);
+}
+#menu-bars
+{
+    position: fixed;
+    z-index: 1000;
+    top: 1rem;left: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    background: var(--green);
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+
+
+
+/*Media-queries*/
+
+
+@media (max-width:450px)
+{
+html
+{
+    font-size: 50%;
+}
+}
+
+
+@media (max-width:991px)
+{
+    html {
+        font-size: 55%;
+       
+    }
+    body
+    {
+        padding-right:0;
+    }
+    header
+    {
+        width:100%;
+        left:-120%;
+    }
+    header.active
+    {
+        left:0%;
+    }
+    #menu-bars
+    {
+        display:initial;
+        
+    }
+    header .navbar
+    {
+        writing-mode: horizontal-tb;
+    }
+    header .navbar a
+    {
+        display: block;
+        font-size: 3rem;
+    }
+}
+/*the end of media queries */
+/*starting of home section,include img+animation typing+ btn */
+section
+{
+    padding:2rem 9%;
+    min-height: 100vh;
+}
+.first
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.first .content
+{
+    text-align: center;
+    position:relative; 
+    z-index:1;
+    
+}
+/* image addition*/
+.content img
+{
+    width:20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border:1px solid var(--green);
+}
+.first .content h3
+{
+    font-size: 3rem;
+    color:#222;
+    text-transform: uppercase;
+}
+
+.first .content h3 span
+{
+   
+    color:var(--green);
+    text-transform: uppercase;
+}
+.first .content p
+{
+    color:#222;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-size: 1.7rem;
+}
+/* button */
+
+.btn
+{
+   
+    height:0px;
+    display:inline-block;
+    margin-top: 1rem;
+    padding:5rem 3rem;
+    background-color: #222;
+    color:#fff;
+    font-size: 1.7 rem;
+    cursor: pointer;
+
+}
+.btn:hover
+{
+    background-color: var(--green);
+}
+/* button ending*/
+
+/*about section */
+.about
+{
+    width:auto;
+    height: auto;
+    border: 1px solid var(--green);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(156, 156, 156);
+    
+}
+
+.head
+{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#fff;
+    
+}
+.head span
+{
+    color: var(--green);
+    text-transform: uppercase;
+}
+.text-about
+{
+    line-height: 2rem;
+}
+.about .head img
+{
+    text-align: center;
+   
+}
+
+.about .image img
+{
+    width:23rem;
+    height: 20rem;
+   
+}
+.text-about .info
+{
+    text-transform: uppercase;
+    text-indent: 50px;
+    font-size: 1.5rem;
+    color:white;
+    letter-spacing: 2px;
+    position: relative;
+    line-height: 30px;
+}
+/*about ending */
+
+/*footer*/
+footer
+.contact
+{
+    position: relative;
+    width:100%;
+    height:70px;
+    background-color: rgb(36, 34, 34);
+    float:right;
+    color:#fff;
+    font-size: 1.5rem;
+    padding:10px;
+    
+}
+.contact p
+{
+    white-space:nowrap ;
+
+}

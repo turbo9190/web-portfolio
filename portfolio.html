@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylsheet" href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap-grid.min.css">
+    <!--css link-->
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+            <a href="#service">service</a>
+
+        </nav>
+       
+    </header>
+    <!--first section starts-->
+<section class="first" id="first">
+<div class="content">
+    <img src="me.jpg" alt="my picture">
+        <h3>Java<span>9190</span></h3>
+        <p>i am <span class="text">front end developer</span></p>
+        <a href="https://www.instagram.com/java_9190/" class="btn"> about me</a>
+</div>
+
+</section>
+
+<section class="about" id="about">   
+
+    <h1 class="head">ABOUT <span>ME</span></h1>
+    <div class="image">
+<img src="me2.jpg" alt="me">
+    </div>
+
+        <div class="text-about">
+<h3>My name is Java<span>9190</span></h3>
+<p class="info"> I am Javokhir Norkuchkorov and i have started web designing 2 years ago 
+    and so far  i attended several projects. I am able to use  html, css , bootstrap and 
+    Javascript.Plus i have a little bit knowledge about android-development. 
+    In addition i am 4th grade student of gachon university which is located south korea.
+</p>
+</div>
+</section>
+
+
+<!--footer section starts-->
+<footer>
+    <span class="contact" id="contact">
+        <p>
+            Email:turbodynamics0919@gmail.com
+           <b style="display:block; ;line-height:3rem;"> phone number:+821080587477</b>
+        </p>
+    </span>
+</footer>
+<!--footer section ends-->
+
+
+
+  <!--Javascript-->
+
+  <!--jslink-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  
+    <script>
+        let menu = document.querySelector('#menu-bars')
+        let header =document. querySelector('header');
+        menu.onclick =() =>
+        {
+            menu.classList.toggle('fa-times')
+            header.classList.toggle('active')
+        }
+        window.onscroll = () =>
+        {
+            menu.classList.remove('fa-times')
+            header.classList.remove('active')
+        }
+        var typed =new Typed('.text',{
+            strings : ['front end developer','web designer','programmer','back-end developer'],
+            loop:true,
+            typespeed:200
+        })
+    </script>
+
+</body>
+</html>
